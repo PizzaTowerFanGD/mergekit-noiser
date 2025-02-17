@@ -1,5 +1,5 @@
-import torch
 from typing import List
+import torch
 from mergekit.merge_methods.easy_define import merge_method
 @merge_method(
     name="model_noiser",
@@ -8,7 +8,7 @@ from mergekit.merge_methods.easy_define import merge_method
 )
 def model_noiser(
     tensors: List[
-    torch.Tensor
+        torch.Tensor
     ],  # List of tensors (in this case, just one model's parameters)
     noise_stddev: float = 0.1,  # Standard deviation of Gaussian noise
     device: str = "cpu",  # Device to perform the operation on
