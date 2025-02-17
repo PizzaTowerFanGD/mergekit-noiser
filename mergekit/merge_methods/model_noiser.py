@@ -2,7 +2,7 @@ from typing import List
 
 import torch
 
-# from mergekit.merge_methods.easy_define import merge_method
+ from mergekit.merge_methods.easy_define import merge_method
 
 
 @merge_method(
