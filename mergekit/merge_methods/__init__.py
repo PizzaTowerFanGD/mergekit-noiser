@@ -8,8 +8,8 @@ from mergekit.merge_methods.base import MergeMethod
 from mergekit.merge_methods.generalized_task_arithmetic import (
     GeneralizedTaskArithmeticMerge,
 )
-from mergekit.merge_methods.registry import REGISTERED_MERGE_METHODS
 from mergekit.merge_methods.model_noiser import model_noiser
+from mergekit.merge_methods.registry import REGISTERED_MERGE_METHODS
 
 
 def get(method: str) -> MergeMethod:
