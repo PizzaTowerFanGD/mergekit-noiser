@@ -7,7 +7,9 @@ from mergekit.merge_methods.easy_define import merge_method
     reference_url="https://example.com/docs",  # optional
 )
 def model_noiser(
-    tensors: List[torch.Tensor],  # List of tensors (in this case, just one model's parameters)
+    tensors: List[
+    torch.Tensor
+    ],  # List of tensors (in this case, just one model's parameters)
     noise_stddev: float = 0.1,  # Standard deviation of Gaussian noise
     device: str = "cpu",  # Device to perform the operation on
 ) -> torch.Tensor:
