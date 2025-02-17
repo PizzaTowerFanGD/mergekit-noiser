@@ -1,7 +1,6 @@
-from mergekit.merge_methods.easy_define import merge_method
 import torch
 from typing import List
-
+from mergekit.merge_methods.easy_define import merge_method
 @merge_method(
     name="model_noiser",
     pretty_name="Model Noiser",
