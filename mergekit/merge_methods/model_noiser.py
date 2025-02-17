@@ -28,5 +28,5 @@ def model_noiser(
 
     # Add noise to model parameters
     noised_model = model_tensor + noise
-    
+
     return noised_model
