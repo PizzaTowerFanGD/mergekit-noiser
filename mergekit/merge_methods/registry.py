@@ -15,7 +15,7 @@ from mergekit.merge_methods.nuslerp import NuSlerpMerge
 from mergekit.merge_methods.passthrough import PassthroughMerge
 from mergekit.merge_methods.slerp import SlerpMerge
 from mergekit.sparsify import SparsificationMethod
-
+from mergekit.merge_methods.model_noiser import model_noiser
 STATIC_MERGE_METHODS: List[MergeMethod] = [
     LinearMerge(),
     SlerpMerge(),
@@ -96,6 +96,7 @@ STATIC_MERGE_METHODS: List[MergeMethod] = [
         method_pretty_name="Linear DELLA",
         method_reference_url="https://arxiv.org/abs/2406.11617",
     ),
+    model_noiser(),
 ]
 
 REGISTERED_MERGE_METHODS: Dict[str, MergeMethod] = {
