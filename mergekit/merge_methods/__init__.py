@@ -9,6 +9,7 @@ from mergekit.merge_methods.generalized_task_arithmetic import (
     GeneralizedTaskArithmeticMerge,
 )
 from mergekit.merge_methods.model_noiser import model_noiser
+from mergekit.merge_methods.mult import multiplicative_merge
 from mergekit.merge_methods.registry import REGISTERED_MERGE_METHODS
 
 
