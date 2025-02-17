@@ -16,6 +16,7 @@ from mergekit.merge_methods.nuslerp import NuSlerpMerge
 from mergekit.merge_methods.passthrough import PassthroughMerge
 from mergekit.merge_methods.slerp import SlerpMerge
 from mergekit.sparsify import SparsificationMethod
+
 STATIC_MERGE_METHODS: List[MergeMethod] = [
     LinearMerge(),
     SlerpMerge(),
